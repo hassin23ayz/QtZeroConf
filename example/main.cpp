@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
 
-	app.setApplicationName("QtZeroConf Example");
+    app.setApplicationName("Bonjour ... QtZeroConf Example");
 	app.setApplicationVersion("0.1");
 
 	mainWindow window;
