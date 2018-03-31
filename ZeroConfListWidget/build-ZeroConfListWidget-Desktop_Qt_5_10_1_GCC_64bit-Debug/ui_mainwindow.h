@@ -110,7 +110,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ZeroConfLed", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Connect", nullptr));
         pushButton_2->setText(QApplication::translate("MainWindow", "Start Publish", nullptr));
         pushButton_3->setText(QApplication::translate("MainWindow", "Stop Publish", nullptr));

@@ -57,7 +57,7 @@ QString MainWindow::buildName(void)
 void MainWindow::updateListWidget()
 {
     ui->listWidget->clear();
-    std::list<QZeroConfService>::iterator it = zeroConfSrvcs.begin();
+    QList<QZeroConfService>::iterator it = zeroConfSrvcs.begin();
     while(it != zeroConfSrvcs.end())
     {
         ui->listWidget->addItem((*it).name()+ " at IP:"+ (*it).ip().toString());
@@ -75,7 +75,7 @@ void MainWindow::appStateChanged(Qt::ApplicationState state)
         if (publishEnabled && !zeroConf.publishExists())
             startPublish();
         if (!zeroConf.browserExists())
-            zeroConf.startBrowser("_qtzeroconf_test._tcp");
+            zeroConf.startBrowser("_zeroconfled._tcp");
     }
 }
 
@@ -85,7 +85,7 @@ void MainWindow::startPublish()
     zeroConf.clearServiceTxtRecords();
     zeroConf.addServiceTxtRecord("Qt", "the best!");
     zeroConf.addServiceTxtRecord("ZeroConf is nice too");
-    zeroConf.startServicePublish(buildName().toUtf8(), "_qtzeroconf_test._tcp", "local", 11437);
+    zeroConf.startServicePublish(buildName().toUtf8(), "_zeroconfled._tcp", "local", 11437);
 }
 // ---------- Discovery Callbacks ----------
 void MainWindow::addService(QZeroConfService zcs)
@@ -98,7 +98,7 @@ void MainWindow::addService(QZeroConfService zcs)
 void MainWindow::removeService(QZeroConfService zcs)
 {
     qDebug() << "Removed service: " << zcs;
-    zeroConfSrvcs.remove(zcs);
+    zeroConfSrvcs.removeAll(zcs);
     updateListWidget();
 }
 

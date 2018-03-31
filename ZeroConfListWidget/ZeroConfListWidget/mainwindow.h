@@ -20,7 +20,7 @@ private:
     Ui::MainWindow *ui;
     QZeroConf zeroConf;
     bool publishEnabled;
-    std::list<QZeroConfService> zeroConfSrvcs;
+    QList<QZeroConfService> zeroConfSrvcs;
 
     void startPublish();
     QString buildName(void);
