@@ -117,4 +117,9 @@ void MainWindow::on_ConnectBtn_clicked()
 {
     QListWidgetItem* item = ui->listWidget->currentItem();
     item->setTextColor(Qt::green);
+
+    qDebug() << item->text();
+
+    mDevice = new devicePanel();
+    mDevice -> show();
 }

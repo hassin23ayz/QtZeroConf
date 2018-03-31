@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "qzeroconf.h"
+#include "devicepanel.h"
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +22,7 @@ private:
     QZeroConf zeroConf;
     bool publishEnabled;
     QList<QZeroConfService> zeroConfSrvcs;
+    devicePanel* mDevice;
 
     void startPublish();
     QString buildName(void);
@@ -31,8 +33,6 @@ private slots:
     void addService(QZeroConfService item);
     void removeService(QZeroConfService item);
     void updateService(QZeroConfService zcs);
-
-    void on_pushButton_2_clicked();
     void on_ConnectBtn_clicked();
 };
 

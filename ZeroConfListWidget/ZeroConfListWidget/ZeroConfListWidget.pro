@@ -25,13 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    devicepanel.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    devicepanel.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    devicepanel.ui
 
 include(../qtzeroconf.pri)
 DEFINES= QZEROCONF_STATIC
