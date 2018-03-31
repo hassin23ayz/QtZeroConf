@@ -32,6 +32,8 @@ private slots:
     void removeService(QZeroConfService item);
     void updateService(QZeroConfService zcs);
 
+    void on_pushButton_2_clicked();
+    void on_ConnectBtn_clicked();
 };
 
 #endif // MAINWINDOW_H

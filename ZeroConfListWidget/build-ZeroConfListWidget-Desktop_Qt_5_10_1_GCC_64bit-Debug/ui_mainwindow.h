@@ -33,11 +33,9 @@ public:
     QVBoxLayout *verticalLayout_3;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton;
     QListWidget *listWidget;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *ConnectBtn;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -59,11 +57,6 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-
-        verticalLayout->addWidget(pushButton);
-
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
 
@@ -75,21 +68,16 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-
-        horizontalLayout->addWidget(pushButton_2);
-
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-
-        horizontalLayout->addWidget(pushButton_3);
-
 
         verticalLayout_2->addLayout(horizontalLayout);
 
 
         verticalLayout_3->addLayout(verticalLayout_2);
+
+        ConnectBtn = new QPushButton(centralWidget);
+        ConnectBtn->setObjectName(QStringLiteral("ConnectBtn"));
+
+        verticalLayout_3->addWidget(ConnectBtn);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -111,9 +99,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ZeroConfLed", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "Connect", nullptr));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Start Publish", nullptr));
-        pushButton_3->setText(QApplication::translate("MainWindow", "Stop Publish", nullptr));
+        ConnectBtn->setText(QApplication::translate("MainWindow", "Connect", nullptr));
     } // retranslateUi
 
 };

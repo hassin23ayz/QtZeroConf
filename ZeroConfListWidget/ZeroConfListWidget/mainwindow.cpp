@@ -67,15 +67,21 @@ void MainWindow::updateListWidget()
 
 void MainWindow::appStateChanged(Qt::ApplicationState state)
 {
-    if (state == Qt::ApplicationSuspended) {
+    if (state == Qt::ApplicationSuspended)
+    {
         zeroConf.stopServicePublish();
         zeroConf.stopBrowser();
     }
-    else if (state == Qt::ApplicationActive) {
+    else if (state == Qt::ApplicationActive)
+    {
         if (publishEnabled && !zeroConf.publishExists())
-            startPublish();
+        {
+            //startPublish();
+        }
         if (!zeroConf.browserExists())
+        {
             zeroConf.startBrowser("_zeroconfled._tcp");
+        }
     }
 }
 
@@ -107,3 +113,8 @@ void MainWindow::updateService(QZeroConfService zcs)
     qDebug() << "Service updated: " << zcs;
 }
 
+void MainWindow::on_ConnectBtn_clicked()
+{
+    QListWidgetItem* item = ui->listWidget->currentItem();
+    item->setTextColor(Qt::green);
+}
