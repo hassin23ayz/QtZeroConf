@@ -54,6 +54,17 @@ QString MainWindow::buildName(void)
     return name;
 }
 
+void MainWindow::updateListWidget()
+{
+    ui->listWidget->clear();
+    std::list<QZeroConfService>::iterator it = zeroConfSrvcs.begin();
+    while(it != zeroConfSrvcs.end())
+    {
+        ui->listWidget->addItem((*it).name()+ " at IP:"+ (*it).ip().toString());
+        it++;
+    }
+}
+
 void MainWindow::appStateChanged(Qt::ApplicationState state)
 {
     if (state == Qt::ApplicationSuspended) {
@@ -80,11 +91,15 @@ void MainWindow::startPublish()
 void MainWindow::addService(QZeroConfService zcs)
 {
     qDebug() << "Added service: " << zcs;
+    zeroConfSrvcs.push_back(zcs);
+    updateListWidget();
 }
 
 void MainWindow::removeService(QZeroConfService zcs)
 {
     qDebug() << "Removed service: " << zcs;
+    zeroConfSrvcs.remove(zcs);
+    updateListWidget();
 }
 
 void MainWindow::updateService(QZeroConfService zcs)

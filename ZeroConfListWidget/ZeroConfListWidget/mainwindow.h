@@ -20,9 +20,11 @@ private:
     Ui::MainWindow *ui;
     QZeroConf zeroConf;
     bool publishEnabled;
+    std::list<QZeroConfService> zeroConfSrvcs;
 
     void startPublish();
     QString buildName(void);
+    void updateListWidget(void);
 
 private slots:
     void appStateChanged(Qt::ApplicationState state);
