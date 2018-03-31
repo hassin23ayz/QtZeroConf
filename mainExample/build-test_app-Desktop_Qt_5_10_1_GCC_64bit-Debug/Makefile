@@ -230,6 +230,7 @@ DIST          = /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/spec_post.prf \
+		../example/.qmake.stash \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -434,6 +435,7 @@ Makefile: ../example/test_app.pro /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/linux-g++/
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -623,6 +625,7 @@ Makefile: ../example/test_app.pro /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/linux-g++/
 /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/qt_config.prf:
 /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/linux-g++/qmake.conf:
 /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/exclusive_builds.prf:
 /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/toolchain.prf:
 /opt/Qt5.10.1/5.10.1/gcc_64/mkspecs/features/default_pre.prf:
