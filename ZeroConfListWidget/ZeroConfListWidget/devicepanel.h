@@ -15,10 +15,18 @@ class devicePanel : public QDialog
 public:
     explicit devicePanel(QWidget *parent = 0);
     ~devicePanel();
-    void assignZeroConfSrvc(QZeroConfService zcs);
+
+    void SetDomainName(std::string _dn);
+    void SetIp(std::string _ip);
+    void SetPort(std::string _port);
 
 private:
     Ui::devicePanel *ui;
+
+    std::string deviceDN;
+    std::string ip;
+    std::string port;
+
 };
 
 #endif // DEVICEPANEL_H

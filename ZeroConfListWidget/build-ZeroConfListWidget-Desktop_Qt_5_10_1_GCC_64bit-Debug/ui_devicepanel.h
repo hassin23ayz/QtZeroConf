@@ -63,9 +63,9 @@ public:
     QPushButton *pushButton_7;
     QWidget *layoutWidget_2;
     QVBoxLayout *verticalLayout_4;
-    QLabel *deviceName_label;
+    QLabel *deviceDN_label;
     QLabel *deviceIP_label;
-    QLabel *devicePor_label;
+    QLabel *devicePort_label;
     QWidget *layoutWidget_3;
     QVBoxLayout *verticalLayout_5;
     QLabel *label_30;
@@ -248,20 +248,20 @@ public:
         verticalLayout_4 = new QVBoxLayout(layoutWidget_2);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        deviceName_label = new QLabel(layoutWidget_2);
-        deviceName_label->setObjectName(QStringLiteral("deviceName_label"));
+        deviceDN_label = new QLabel(layoutWidget_2);
+        deviceDN_label->setObjectName(QStringLiteral("deviceDN_label"));
 
-        verticalLayout_4->addWidget(deviceName_label);
+        verticalLayout_4->addWidget(deviceDN_label);
 
         deviceIP_label = new QLabel(layoutWidget_2);
         deviceIP_label->setObjectName(QStringLiteral("deviceIP_label"));
 
         verticalLayout_4->addWidget(deviceIP_label);
 
-        devicePor_label = new QLabel(layoutWidget_2);
-        devicePor_label->setObjectName(QStringLiteral("devicePor_label"));
+        devicePort_label = new QLabel(layoutWidget_2);
+        devicePort_label->setObjectName(QStringLiteral("devicePort_label"));
 
-        verticalLayout_4->addWidget(devicePor_label);
+        verticalLayout_4->addWidget(devicePort_label);
 
         layoutWidget_3 = new QWidget(groupBox_6);
         layoutWidget_3->setObjectName(QStringLiteral("layoutWidget_3"));
@@ -629,7 +629,7 @@ public:
 
     void retranslateUi(QDialog *devicePanel)
     {
-        devicePanel->setWindowTitle(QApplication::translate("devicePanel", "Dialog", nullptr));
+        devicePanel->setWindowTitle(QApplication::translate("devicePanel", "ZeroConfLed Controller Panel", nullptr));
         groupBox_3->setTitle(QApplication::translate("devicePanel", "Electrical data", nullptr));
         label->setText(QApplication::translate("devicePanel", "Voltage:", nullptr));
         label_9->setText(QApplication::translate("devicePanel", "Current:", nullptr));
@@ -645,9 +645,9 @@ public:
         pushButton_6->setText(QApplication::translate("devicePanel", "Ota File", nullptr));
         checkBox->setText(QApplication::translate("devicePanel", "Firmware Upgrade", nullptr));
         pushButton_7->setText(QApplication::translate("devicePanel", "Upgrade", nullptr));
-        deviceName_label->setText(QApplication::translate("devicePanel", "Arduino-AA-BB-CC-DD-EE-FF", nullptr));
+        deviceDN_label->setText(QApplication::translate("devicePanel", "Arduino-AA-BB-CC-DD-EE-FF", nullptr));
         deviceIP_label->setText(QApplication::translate("devicePanel", "192.11.67.103", nullptr));
-        devicePor_label->setText(QApplication::translate("devicePanel", "3078", nullptr));
+        devicePort_label->setText(QApplication::translate("devicePanel", "3078", nullptr));
         label_30->setText(QApplication::translate("devicePanel", "Name:", nullptr));
         label_33->setText(QApplication::translate("devicePanel", "IP:", nullptr));
         label_35->setText(QApplication::translate("devicePanel", "Port:", nullptr));

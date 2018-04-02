@@ -98,7 +98,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ZeroConfLed", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ZeroConfLed Controller Browser", nullptr));
         ConnectBtn->setText(QApplication::translate("MainWindow", "Connect", nullptr));
     } // retranslateUi
 

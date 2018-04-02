@@ -13,7 +13,21 @@ devicePanel::~devicePanel()
     delete ui;
 }
 
-void devicePanel::assignZeroConfSrvc(QZeroConfService zcs)
+void devicePanel::SetDomainName(std::string _dn)
 {
-    ui->deviceName_label->setText(zcs.name());
+    deviceDN = _dn;
+    ui->deviceDN_label->setText(QString::fromStdString(deviceDN));
 }
+
+void devicePanel::SetIp(std::string _ip)
+{
+    ip = _ip;
+    ui->deviceIP_label->setText(QString::fromStdString(ip));
+}
+
+void devicePanel::SetPort(std::string _port)
+{
+    port = _port;
+    ui->devicePort_label->setText(QString::fromStdString(port));
+}
+

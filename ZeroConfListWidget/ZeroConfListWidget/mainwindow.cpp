@@ -60,7 +60,7 @@ void MainWindow::updateListWidget()
     QList<QZeroConfService>::iterator it = zeroConfSrvcs.begin();
     while(it != zeroConfSrvcs.end())
     {
-        ui->listWidget->addItem((*it).name()+ " at IP:"+ (*it).ip().toString());
+        ui->listWidget->addItem((*it).name()+ "  ,"+ (*it).ip().toString()+"  ,"+QString::number((*it).port()));
         it++;
     }
 }
@@ -118,8 +118,46 @@ void MainWindow::on_ConnectBtn_clicked()
     QListWidgetItem* item = ui->listWidget->currentItem();
     item->setTextColor(Qt::green);
 
-    qDebug() << item->text();
+    QString itemStr = item->text();
+    std::string itemStrD = itemStr.toStdString();
+    qDebug() << itemStrD.c_str();
+    qDebug() << "------------------------------";
+
+    //parsing data
+    std::string deviceDN;
+    std::string ip;
+    std::string port;
+
+    std::string delim = "  ,";
+    std::string token;
+    size_t pos = 0;
+    size_t i=0;
+    while((pos = itemStrD.find(delim)) !=std::string::npos)
+    {
+        token = itemStrD.substr(0, pos);
+        qDebug() << token.c_str();
+        itemStrD.erase(0, pos+delim.length());
+        if(i==0){
+            deviceDN = token;
+        }
+        if(i==1){
+            ip = token;
+        }
+        i++;
+    }
+    port = itemStrD;
+    qDebug() << itemStrD.c_str();
+    qDebug() << "------------------------------";
+
+    qDebug() << deviceDN.c_str();
+    qDebug() << ip.c_str();
+    qDebug() << port.c_str();
+    qDebug() << "------------------------------";
 
     mDevice = new devicePanel();
+    mDevice -> SetDomainName(deviceDN);
+    mDevice -> SetIp(ip);
+    mDevice -> SetPort(port);
+
     mDevice -> show();
 }
