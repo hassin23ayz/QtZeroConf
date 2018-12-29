@@ -623,6 +623,11 @@ public:
 
 
         retranslateUi(devicePanel);
+        QObject::connect(horizontalSlider, SIGNAL(sliderMoved(int)), progressBar, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_2, SIGNAL(sliderMoved(int)), progressBar_2, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_3, SIGNAL(sliderMoved(int)), progressBar_3, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_4, SIGNAL(sliderMoved(int)), progressBar_4, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_5, SIGNAL(valueChanged(int)), progressBar_5, SLOT(setValue(int)));
 
         QMetaObject::connectSlotsByName(devicePanel);
     } // setupUi

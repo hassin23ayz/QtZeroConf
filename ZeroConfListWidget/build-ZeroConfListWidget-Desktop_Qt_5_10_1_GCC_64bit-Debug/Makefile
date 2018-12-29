@@ -815,6 +815,9 @@ moc_mainwindow.cpp: /opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QMainWindow \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qicon.h \
+		../ZeroConfListWidget/devicepanel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QDialog \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qdialog.h \
 		../ZeroConfListWidget/mainwindow.h \
 		moc_predefs.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/bin/moc
@@ -1275,6 +1278,9 @@ main.o: ../ZeroConfListWidget/main.cpp ../ZeroConfListWidget/mainwindow.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qicon.h \
+		../ZeroConfListWidget/devicepanel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QDialog \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QApplication \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1391,6 +1397,9 @@ mainwindow.o: ../ZeroConfListWidget/mainwindow.cpp ../ZeroConfListWidget/mainwin
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qtouchdevice.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qicon.h \
+		../ZeroConfListWidget/devicepanel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QDialog \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/QVariant \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QAction \
@@ -1556,7 +1565,70 @@ devicepanel.o: ../ZeroConfListWidget/devicepanel.cpp ../ZeroConfListWidget/devic
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qtouchdevice.h \
-		ui_devicepanel.h
+		ui_devicepanel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/QVariant \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QAction \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qaction.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qicon.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qactiongroup.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QApplication \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qapplication.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qcoreapplication.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qeventloop.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qguiapplication.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qinputmethod.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QButtonGroup \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QCheckBox \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qcheckbox.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QFormLayout \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qformlayout.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QLayout \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qgridlayout.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QGroupBox \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qgroupbox.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qframe.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QHBoxLayout \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QHeaderView \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qheaderview.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtGui/qvalidator.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qslider.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qstyle.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qtabwidget.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qrubberband.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QLCDNumber \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qlcdnumber.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QLabel \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qlabel.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QProgressBar \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qprogressbar.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QPushButton \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QRadioButton \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qradiobutton.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QSlider \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QSplitter \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qsplitter.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QTimeEdit \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/qdatetimeedit.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtCore/qdatetime.h \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QVBoxLayout \
+		/opt/Qt5.10.1/5.10.1/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o devicepanel.o ../ZeroConfListWidget/devicepanel.cpp
 
 avahiclient.o: ../avahiclient.cpp ../avahi-qt/qt-watch.h \
